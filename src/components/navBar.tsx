@@ -88,7 +88,7 @@ const NavBar: React.FC<NavBarProps> = (props) => {
           )
         )}
       </div>
-      <Link to="signin">
+      <Link to="/signin">
         <button className="bg-[#2aa5f5] px-6 py-2 rounded text-white hidden md:inline-block">
           سجل الدخول
         </button>
