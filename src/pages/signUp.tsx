@@ -13,12 +13,12 @@ const signUp = () => {
 
         <div className="flex px-[12px] sm:px-[40px] py-[32px] items-center w-full ">
           <img
-            src="/signup1.jpg"
+            src="/signup1.png"
             alt="cover"
             className="lg:rounded-[100px] md:rounded-[50%] rounded-[100px] h-[90vh] lg:w-[55%] w-[50%] hidden md:inline-block"
           />
           <img
-            src="/signup11.jpg"
+            src="/signup11.png"
             alt="cover"
             className=" rounded-[500px] h-[90vh] lg:w-[55%] w-[35%] hidden md:hidden sm:inline-block"
           />

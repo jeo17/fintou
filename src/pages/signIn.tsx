@@ -77,22 +77,22 @@ const signIn = () => {
             </div>
           </form>
           <img
-            src="/signin.jpg"
+            src="/signin.png"
             alt="cover"
             className="rounded-[100px] h-[90vh] w-[52%] lg:inline-block hidden"
           />
           <img
-            src="/signin11.jpg"
+            src="/signin11.png"
             alt="cover"
             className="rounded-[30%] h-[90vh] w-[45%] hidden lg:hidden md:inline-block"
           />
           <img
-            src="/signin12.jpg"
+            src="/signin12.png"
             alt="cover"
             className="rounded-[100px] h-[90vh] w-[45%] hidden md:hidden sm:inline-block"
           />
           <img
-            src="/signin12.jpg"
+            src="/signin12.png"
             alt="cover"
             className="rounded-[100px] h-[68vh] w-[34%] sm:hidden inline-block"
           />
