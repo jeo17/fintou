@@ -117,17 +117,35 @@ const NavBar: React.FC<NavBarProps> = (props) => {
           </button>
           <div className="flex flex-col items-center gap-6">
             {navbar.map((item: NavBar, index) => (
-              <Link to={item.path} key={index} onClick={() => setIsOpen(false)}>
-                <span
-                  className={`leading-[140%] text-white text-2xl ${
-                    item.title === props.selected
-                      ? "border-b-2 border-b-[#2aa5f5]"
-                      : ""
-                  } transition-all hover:text-[#2aa5f5] duration-300 cursor-pointer`}
-                >
-                  {item.title}
-                </span>
-              </Link>
+
+item.path === "feedback" ? (
+  <ScrollLink to={item.path} key={index} smooth duration={500} onClick={() => setIsOpen(false)}>
+    <span
+      className={`leading-[140%] text-white ${
+        item.title === props.selected
+          ? "border-b-2 border-b-[#2aa5f5]"
+          : ""
+      } transition-all hover:text-[#2aa5f5] duration-300 cursor-pointer`}
+    >
+      {item.title}
+    </span>
+  </ScrollLink>
+) : (
+  <Link to={item.path} key={index} onClick={() => setIsOpen(false)}>
+    <span
+      className={`leading-[140%] text-white ${
+        item.title === props.selected
+          ? "border-b-2 border-b-[#2aa5f5]"
+          : ""
+      } transition-all hover:text-[#2aa5f5] duration-300 cursor-pointer`}
+    >
+      {item.title}
+    </span>
+  </Link>
+)
+
+
+
             ))}
             <Link to="/signin">
               <button className="bg-[#2aa5f5] px-6 py-2 rounded text-white mt-2">
